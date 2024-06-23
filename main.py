@@ -82,7 +82,7 @@ def main(month, num_suiji, pace_min, pace_max, distance_min, distance_max):
         pace_get = pace
         distance_get = str(distance)[:4]
         time1 = test.convert_pace_to_time_format(time)
-        time_get = "00:0" + time1
+        time_get = time1
         random_time = test.generate_random_time_between_22_and_23()
 
         img = Image.open('back.jpg')
