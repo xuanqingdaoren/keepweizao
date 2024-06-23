@@ -30,13 +30,22 @@ def convert_pace_to_time_format(pace_in_minutes_per_km):
     # 分离整数部分和小数部分
     minutes = int(pace_in_minutes_per_km)
     seconds = round((pace_in_minutes_per_km - minutes) * 60)
+    if minutes < 10:
+        minutes = "00:0" + str(minutes)
+    elif 10 <= minutes < 60:
+        minutes = "00:" + str(minutes)
+    elif minutes >= 60:
+        hours = minutes // 60
+        if hours < 10:
+            minutes = "0" + str(hours) + ":" + str(minutes - hours * 60)
+        elif hours >= 10:
+            minutes = str(hours) + ":" + str(minutes - hours * 60)
 
     # 使用字符串格式化来确保秒数是两位数
     seconds_str = f"{seconds:02d}"
 
     # 拼接成时间格式
     time_str = f"{minutes}:{seconds_str}"
-
 
     return time_str
 
