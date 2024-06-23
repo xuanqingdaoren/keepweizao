@@ -2,4 +2,4 @@
 ## 运行main.py
 ## widows免环境配置文件地址在
 
-链接: https://pan.baidu.com/s/1SVVx5s-oYPvrL851iOKFYw?pwd=ifhs 提取码: ifhs 复制这段内容后打开百度网盘手机App，操作更方便哦
+最新的百度网盘地址链接: https://pan.baidu.com/s/1apjJxuJ520ZYwQoOAypoAg?pwd=tgre 提取码: tgre
